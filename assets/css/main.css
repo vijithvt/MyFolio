@@ -2325,7 +2325,8 @@ section,
 }
 
 .portfolio .portfolio-card .portfolio-info p.text-muted {
-  color: color-mix(in srgb, var(--default-color), #fff 45%) !important;
+  color: var(--default-color) !important;
+  opacity: 0.75;
   line-height: 1.7;
   margin-top: 14px !important;
   margin-bottom: 16px;
