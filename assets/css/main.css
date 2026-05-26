@@ -2324,6 +2324,13 @@ section,
   margin-bottom: 10px;
 }
 
+.portfolio .portfolio-card .portfolio-info p.text-muted {
+  color: color-mix(in srgb, var(--default-color), #fff 45%) !important;
+  line-height: 1.7;
+  margin-top: 14px !important;
+  margin-bottom: 16px;
+}
+
 .portfolio .portfolio-card .portfolio-info .portfolio-tags {
   display: flex;
   flex-wrap: wrap;
