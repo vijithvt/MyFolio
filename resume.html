@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script>(function () { try { if (localStorage.getItem('theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); } } catch (e) {} })();</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Resume | Vijith V T – Generative AI & Intelligent Automation Engineer</title>
@@ -49,6 +50,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -59,6 +61,9 @@
         <a href="https://github.com/vijithvt" class="github"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/vijithvt" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="mailto:vijith.vt.ai@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+        <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Toggle light and dark theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
       </div>
 
     </div>
@@ -72,8 +77,9 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Professional Experience & Education</h2>
-        <p>Generative AI and Intelligent Automation Engineer with expertise in LLM systems, agentic architectures, and
-          production-grade backend engineering.</p>
+        <p>AI Engineer and Python Backend Developer with 10+ years of overall professional experience, including 3+
+          years building production-ready AI and automation systems, backed by an M.Sc. in Artificial Intelligence.
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -104,58 +110,56 @@
             </div><!-- End Education Section -->
 
             <!-- Professional Skills Section -->
-            <div class="resume-item skills-animation" data-aos="fade-up">
-              <h3 class="resume-title">Professional Skills</h3>
+            <div class="resume-item" data-aos="fade-up">
+              <h3 class="resume-title">Core Skills</h3>
 
               <div class="resume-content">
-                <div class="skill-item">
-                  <h4>Generative AI & LLM Systems</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+                <div class="skill-category mb-3">
+                  <h4>Generative AI & LLMs</h4>
+                  <p class="small">Large Language Models (LLMs), Prompt Engineering, Retrieval-Augmented Generation
+                    (RAG), Embeddings, Vector Search, Semantic Search, Conversational AI, LLM Integration, LLM APIs
+                  </p>
                 </div>
 
-                <div class="skill-item">
-                  <h4>Agentic Architecture & Orchestration</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+                <div class="skill-category mb-3">
+                  <h4>Agentic AI</h4>
+                  <p class="small">AI Agents, Multiagent Systems, Agentic AI Architectures, Multi-Step Reasoning,
+                    Tool Calling, Function Calling, Workflow Orchestration, Model Context Protocol (MCP)</p>
                 </div>
 
-                <div class="skill-item">
-                  <h4>Intelligent Automation Frameworks</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+                <div class="skill-category mb-3">
+                  <h4>AI Frameworks & Tools</h4>
+                  <p class="small">LangChain, LangGraph, Vector Databases, Gradio</p>
                 </div>
 
-                <div class="skill-item">
-                  <h4>Backend System Design (Python, APIs)</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+                <div class="skill-category mb-3">
+                  <h4>Backend Engineering</h4>
+                  <p class="small">Python, FastAPI, Flask, Django, REST API Design, JWT Authentication,
+                    Role-Based Access Control (RBAC), System Integration, Asynchronous Processing (Celery), Software
+                    Architecture, Clean Architecture, Scalable Systems</p>
                 </div>
 
-                <div class="resume-item mt-4" data-aos="fade-up">
-                  <h3 class="resume-title">Core Expertise</h3>
-                  <div class="resume-content">
-                    <ul class="expertise-list" style="list-style: none; padding-left: 0;">
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Generative AI</li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Agentic Systems</li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Retrieval-Augmented Generation (RAG)
-                      </li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> LangChain</li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Prompt Engineering</li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Vector Databases</li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Intelligent Automation</li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> API Integration</li>
-                      <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Production AI Deployment</li>
-                    </ul>
-                  </div>
+                <div class="skill-category mb-3">
+                  <h4>Databases</h4>
+                  <p class="small">Neo4j (Graph Database), PostgreSQL, MySQL, SQLite, Redis</p>
+                </div>
+
+                <div class="skill-category mb-3">
+                  <h4>Automation & Testing</h4>
+                  <p class="small">Robot Framework, Playwright, Appium, Selenium, Automation Frameworks, SSH, RDP,
+                    Workflow Automation</p>
+                </div>
+
+                <div class="skill-category mb-3">
+                  <h4>Cloud, DevOps & Full-Stack</h4>
+                  <p class="small">Docker, Git, Linux, CI/CD Fundamentals, Vercel, Supabase, React, TypeScript,
+                    Tailwind CSS</p>
+                </div>
+
+                <div class="skill-category">
+                  <h4>Engineering Enablement</h4>
+                  <p class="small">Technical Mentoring, Curriculum Development, AI Enablement, Engineering
+                    Productivity</p>
                 </div>
               </div>
             </div><!-- End Professional Skills Section -->
@@ -168,44 +172,89 @@
 
               <div class="resume-content">
                 <article class="experience-item">
-                  <h4>Associate Specialist</h4>
+                  <h4>Associate Specialist, Academy & Research</h4>
                   <h5>October 2022 – Present</h5>
                   <p class="company"><em>ThinkPalm Technologies Pvt. Ltd., Trivandrum, India</em></p>
                   <ul>
-                    <li>Designed and developed Generative AI systems and intelligent automation frameworks.</li>
-                    <li>Built cross-VM automation architecture integrating Robot Framework, Appium, Playwright, SSH &
-                      RDP.</li>
-                    <li>Implemented agent-oriented system patterns including tool-based orchestration and API
-                      integration.</li>
-                    <li>Delivered 50+ technical training sessions on Python, AI, and automation.</li>
-                    <li>Mentored 200+ engineers toward production-level AI and automation proficiency.</li>
-                    <li>Focused on transitioning AI PoCs into scalable, production-ready systems.</li>
+                    <li>Design and implement LLM-powered solutions and automation frameworks for scalable enterprise
+                      applications, using FastAPI, LangChain, and RAG architectures.</li>
+                    <li>Architected an Enterprise Knowledge Graph AI Platform (Python, Flask, Neo4j, Celery, Redis,
+                      Docker) that centralized fragmented engineering knowledge from Git, Jira, commits, and
+                      documentation into a searchable graph, reducing manual effort to trace code ownership and
+                      dependencies.</li>
+                    <li>Architected a cross-VM automation framework using Robot Framework, Selenium, Playwright, and
+                      Appium, increasing automation coverage by 30%+ across Windows VM-based validation and testing
+                      workflows.</li>
+                    <li>Develop maintainable, Python-based backend services integrating AI capabilities with
+                      enterprise platforms, and prototype Agentic AI proof-of-concepts using LangGraph and Model
+                      Context Protocol (MCP) to evaluate tool-calling and multi-step reasoning patterns.</li>
+                    <li>Collaborate with cross-functional teams to enable intelligent workflows and ensure production
+                      readiness, focusing on performance and security.</li>
+                    <li>Mentor and train 200+ engineers, delivering 50+ technical sessions on Generative AI, Python,
+                      automation, and MLOps.</li>
                   </ul>
                 </article>
 
                 <article class="experience-item">
                   <h4>Guest Faculty – Computer Science</h4>
                   <h5>September 2018 – October 2022</h5>
-                  <p class="company"><em>Government of Kerala, Kerala, India</em></p>
+                  <p class="company"><em>Kerala State Centre for Advanced Printing & Training, Kerala, India</em></p>
                   <ul>
-                    <li>Taught Artificial Intelligence, Python Programming, C Programming, and Database Systems.</li>
-                    <li>Conducted hands-on AI workshops across multiple institutions.</li>
-                    <li>Guided students in industry-relevant mini-projects and AI exploration.</li>
+                    <li>Guided students in core computing concepts and emerging technologies, strengthening practical
+                      AI and programming skills.</li>
+                    <li>Developed and delivered interactive workshops connecting theoretical concepts to real-world AI
+                      and automation applications.</li>
+                    <li>Built student confidence through hands-on projects, fostering problem-solving skills and
+                      innovation.</li>
                   </ul>
                 </article>
 
                 <article class="experience-item">
+                  <h4>Earlier Career</h4>
+                  <h5>2015 – 2020</h5>
+                  <ul>
+                    <li>Program Assistant, Central Adoption Resource Authority (2018–2020)</li>
+                    <li>Project Assistant, National Health Mission (2017–2018)</li>
+                    <li>Commercial Apprentice, Kerala State Pollution Control Board (2015–2016)</li>
+                  </ul>
+                  <p class="small text-muted">Administrative and project-support roles prior to transitioning into
+                    technical education and software/AI engineering.</p>
+                </article>
+              </div>
+            </div><!-- End Experience Section -->
+
+            <!-- Additional Experience Section -->
+            <div class="resume-item mt-4" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Additional Experience</h3>
+              <div class="resume-content">
+                <article class="experience-item">
                   <h4>Founder</h4>
-                  <h5>April 2026 – Present</h5>
+                  <h5>April 2025 – Present</h5>
                   <p class="company"><em>Sruthi Music Academy</em></p>
                   <ul>
-                    <li>Built a structured international music academy.</li>
-                    <li>Developed digital student dashboard for attendance and performance tracking.</li>
+                    <li>Curriculum design, learning systems, and international online teaching.</li>
+                    <li>Developed a digital student dashboard for attendance and performance tracking.</li>
                     <li>Integrated structured pedagogy with technology-enabled learning systems.</li>
                   </ul>
                 </article>
               </div>
-            </div><!-- End Experience Section -->
+            </div><!-- End Additional Experience Section -->
+
+            <!-- Certifications Section -->
+            <div class="resume-item mt-4" data-aos="fade-up" data-aos-delay="150">
+              <h3 class="resume-title">Certifications</h3>
+              <div class="resume-content">
+                <ul class="expertise-list" style="list-style: none; padding-left: 0;">
+                  <li><i class="bi bi-patch-check-fill text-primary me-2"></i> Google IT Automation with Python
+                    Specialization</li>
+                  <li><i class="bi bi-patch-check-fill text-primary me-2"></i> Google Data Analytics Specialization
+                  </li>
+                  <li><i class="bi bi-patch-check-fill text-primary me-2"></i> Foundations of Project Management</li>
+                  <li><i class="bi bi-patch-check-fill text-primary me-2"></i> Microsoft Excel: Beginner to
+                    Professional</li>
+                </ul>
+              </div>
+            </div><!-- End Certifications Section -->
           </div>
         </div>
 

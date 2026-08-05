@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script>(function () { try { if (localStorage.getItem('theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); } } catch (e) {} })();</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Portfolio | Vijith V T – Generative AI & Intelligent Automation Projects</title>
@@ -49,6 +50,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -59,6 +61,9 @@
         <a href="https://github.com/vijithvt" class="github"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/vijithvt" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="mailto:vijith.vt.ai@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+        <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Toggle light and dark theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
       </div>
 
     </div>
@@ -101,19 +106,48 @@
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>TalentHunt Recruitment Management System</h4>
+                  <h4>TalentHunt – AI-Powered Intelligent Recruitment Platform</h4>
                   <p>AI Recruitment Platform</p>
-                  <p class="mt-2 small text-muted">An intelligent recruitment platform with AI-assisted resume
-                    screening, candidate evaluation, interview workflow automation, analytics dashboards, and role-based
-                    management for streamlining enterprise hiring processes.</p>
+                  <p class="mt-2 small text-muted">An AI-powered ATS that transforms keyword-based recruitment into
+                    contextual, LLM-driven evaluation. Modular FastAPI backend with a Resume-JD Matching Engine using
+                    LLM + RAG pipelines, embeddings, and vector retrieval — reducing manual resume-screening effort
+                    by roughly 60-70%.</p>
                   <div class="portfolio-tags">
                     <span>Python</span>
                     <span>FastAPI</span>
+                    <span>MySQL</span>
+                    <span>JWT</span>
+                    <span>LangChain</span>
+                    <span>LLMs</span>
+                    <span>RAG</span>
+                    <span>Embeddings</span>
+                    <span>Vector DB</span>
                     <span>React</span>
-                    <span>Supabase</span>
-                    <span>PostgreSQL</span>
-                    <span>Tailwind CSS</span>
-                    <span>AI APIs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <div class="portfolio-card">
+                <div class="portfolio-img portfolio-img-placeholder">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Enterprise Knowledge Graph AI Platform</h4>
+                  <p>AI-Assisted Engineering Intelligence Platform</p>
+                  <p class="mt-2 small text-muted">Architected a backend platform centralizing fragmented
+                    engineering knowledge from Git, Jira, commits, and documentation into a searchable Neo4j graph.
+                    Built asynchronous processing pipelines with Celery and Redis, and implemented AI-assisted
+                    repository analysis workflows — reducing manual effort to trace code ownership and
+                    dependencies.</p>
+                  <div class="portfolio-tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>Neo4j</span>
+                    <span>Celery</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
                   </div>
                 </div>
               </div>
@@ -191,18 +225,22 @@
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Music Academy Management System</h4>
-                  <p>Education Management Platform</p>
-                  <p class="mt-2 small text-muted">A modern management platform for online and offline music classes
-                    with admissions, payments, scheduling, attendance tracking, and responsive student dashboards.</p>
+                  <h4>Sruthi Music Academy Management System</h4>
+                  <p>Full-Stack Learning Management Platform</p>
+                  <p class="mt-2 small text-muted">A full-stack Student Management System with role-protected
+                    dashboards for Students, Admins, and Institutions — progress tracking, attendance, fee
+                    management, curriculum control, and an AI-powered RAG chatbot for contextual assistance.</p>
                   <div class="portfolio-tags">
                     <span>React</span>
+                    <span>TypeScript</span>
                     <span>Supabase</span>
                     <span>PostgreSQL</span>
-                    <span>Razorpay</span>
+                    <span>RLS</span>
+                    <span>Edge Functions</span>
                     <span>Tailwind CSS</span>
-                    <span>Framer Motion</span>
-                    <span>Netlify</span>
+                    <span>TanStack Query</span>
+                    <span>Capacitor</span>
+                    <span>RAG</span>
                   </div>
                 </div>
               </div>
@@ -300,17 +338,17 @@
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Library Management System</h4>
-                  <p>Home Library Application</p>
-                  <p class="mt-2 small text-muted">A modern home library management application for managing books,
-                    lending records, and member activities with a clean and responsive UI experience.</p>
+                  <h4>DigiLib – Modern Digital Library Management System</h4>
+                  <p>Digital Library Management System</p>
+                  <p class="mt-2 small text-muted">A web-based Digital Library Management System enabling users to
+                    browse, search, and manage digital book collections through a clean, responsive UI focused on
+                    maintainability, fast rendering, and organized content presentation.</p>
                   <div class="portfolio-tags">
-                    <span>Vite</span>
                     <span>React</span>
                     <span>TypeScript</span>
-                    <span>JavaScript</span>
+                    <span>Vite</span>
                     <span>Tailwind CSS</span>
-                    <span>shadcn/ui</span>
+                    <span>shadcn-ui</span>
                   </div>
                 </div>
               </div>

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script>(function () { try { if (localStorage.getItem('theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); } } catch (e) {} })();</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>About | Vijith V T – Generative AI & Agentic Systems Engineer</title>
@@ -49,6 +50,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -59,6 +61,9 @@
         <a href="https://github.com/vijithvt" class="github"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/vijithvt" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="mailto:vijith.vt.ai@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+        <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Toggle light and dark theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
       </div>
 
     </div>
@@ -86,14 +91,16 @@
               <span class="eyebrow">Generative AI | Agentic Systems | Intelligent Automation</span>
               <h2 class="headline">Hi, I'm Vijith — Engineering Intelligent Systems That Scale</h2>
               <p class="lead">
-                I am a Generative AI and Agentic Systems Engineer with a Master’s degree in Artificial Intelligence,
-                specializing in building LLM-powered applications and intelligent automation frameworks from proof of
-                concept to production-ready systems.
+                I'm an AI Engineer and Python Backend Developer with 10+ years of overall professional experience,
+                including 3+ years building production-ready AI and automation systems, backed by an M.Sc. in
+                Artificial Intelligence.
               </p>
               <p>
-                At ThinkPalm Technologies, I design scalable backend architectures, AI-driven orchestration systems, and
-                enterprise-grade automation frameworks. My work bridges large language models, APIs, and business
-                workflows to create intelligent, reliable, and production-ready solutions.
+                I build LLM-powered applications using FastAPI, LangChain, LangGraph, and RAG architectures, with
+                hands-on experience across AI Agents, Vector Databases, and Model Context Protocol (MCP). At
+                ThinkPalm Technologies, I combine deep backend engineering with the ability to drive AI adoption
+                across engineering teams — having mentored 200+ engineers through 50+ technical sessions on
+                Generative AI, Python, and automation.
               </p>
 
               <div class="cta-group">
@@ -157,28 +164,28 @@
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
               <article class="timeline-item">
                 <span class="dot"></span>
-                <time>2016</time>
-                <h4>Founder, Sruthi Music Academy</h4>
-                <p>Built a structured international music academy integrating digital student dashboards and performance
-                  tracking systems.</p>
+                <time>2018</time>
+                <h4>Guest Faculty, Kerala State Centre for Advanced Printing & Training</h4>
+                <p>Guided students in core computing concepts and delivered interactive workshops connecting AI
+                  theory to real-world programming and automation applications.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
               <article class="timeline-item">
                 <span class="dot"></span>
-                <time>2018</time>
-                <h4>Guest Faculty, Government of Kerala</h4>
-                <p>Delivered AI, Python, C Programming, and Database Systems education across diploma and undergraduate
-                  programs, conducting hands-on AI workshops.</p>
+                <time>2022</time>
+                <h4>Associate Specialist, ThinkPalm Technologies</h4>
+                <p>Designing and implementing LLM-powered solutions and automation frameworks for scalable enterprise
+                  applications using FastAPI, LangChain, and RAG architectures.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
               <article class="timeline-item">
                 <span class="dot"></span>
-                <time>2022</time>
-                <h4>Associate Specialist, ThinkPalm Technologies</h4>
-                <p>Developing Generative AI systems, intelligent automation frameworks, and scalable backend
-                  integrations for enterprise use cases.</p>
+                <time>2025</time>
+                <h4>Founder, Sruthi Music Academy</h4>
+                <p>Built a structured international music academy integrating a digital student dashboard for
+                  attendance and performance tracking.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
@@ -186,8 +193,8 @@
                 <span class="dot"></span>
                 <time>Present</time>
                 <h4>Production AI & Agentic Systems</h4>
-                <p>Designing LLM-powered solutions, RAG pipelines, tool-based orchestration layers, and enterprise AI
-                  integrations focused on performance, scalability, and responsible AI practices.</p>
+                <p>Building LLM-powered applications with FastAPI, LangChain, LangGraph, and RAG, and mentoring
+                  engineers on Generative AI, Python, and automation.</p>
               </article>
             </div>
           </div>
@@ -234,65 +241,157 @@
 
     </section><!-- /About Section -->
 
+    <!-- Tech Stack Marquee Section -->
+    <section id="tech-stack" class="tech-stack tech-marquee-section section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tools & Technologies</h2>
+        <p>The languages, frameworks, and platforms I use to build production-grade Generative AI, agentic, and
+          backend systems.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="tech-marquee">
+          <div class="tech-marquee-track">
+            <div class="tech-logo-chip" title="Python"><img src="assets/img/tech/python.svg" alt="Python"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="FastAPI"><img src="assets/img/tech/fastapi.svg" alt="FastAPI"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="LangChain"><img src="assets/img/tech/langchain.svg" alt="LangChain"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="React"><img src="assets/img/tech/react.svg" alt="React"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="TypeScript"><img src="assets/img/tech/typescript.svg"
+                alt="TypeScript" loading="lazy"></div>
+            <div class="tech-logo-chip" title="PostgreSQL"><img src="assets/img/tech/postgresql.svg"
+                alt="PostgreSQL" loading="lazy"></div>
+            <div class="tech-logo-chip" title="Docker"><img src="assets/img/tech/docker.svg" alt="Docker"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Redis"><img src="assets/img/tech/redis.svg" alt="Redis"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Git"><img src="assets/img/tech/git.svg" alt="Git" loading="lazy">
+            </div>
+            <div class="tech-logo-chip" title="Robot Framework"><img src="assets/img/tech/robotframework.svg"
+                alt="Robot Framework" loading="lazy"></div>
+            <!-- duplicate set for seamless loop -->
+            <div class="tech-logo-chip" title="Python"><img src="assets/img/tech/python.svg" alt="Python"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="FastAPI"><img src="assets/img/tech/fastapi.svg" alt="FastAPI"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="LangChain"><img src="assets/img/tech/langchain.svg" alt="LangChain"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="React"><img src="assets/img/tech/react.svg" alt="React"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="TypeScript"><img src="assets/img/tech/typescript.svg"
+                alt="TypeScript" loading="lazy"></div>
+            <div class="tech-logo-chip" title="PostgreSQL"><img src="assets/img/tech/postgresql.svg"
+                alt="PostgreSQL" loading="lazy"></div>
+            <div class="tech-logo-chip" title="Docker"><img src="assets/img/tech/docker.svg" alt="Docker"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Redis"><img src="assets/img/tech/redis.svg" alt="Redis"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Git"><img src="assets/img/tech/git.svg" alt="Git" loading="lazy">
+            </div>
+            <div class="tech-logo-chip" title="Robot Framework"><img src="assets/img/tech/robotframework.svg"
+                alt="Robot Framework" loading="lazy"></div>
+          </div>
+        </div>
+
+        <div class="tech-marquee tech-marquee-reverse">
+          <div class="tech-marquee-track">
+            <div class="tech-logo-chip" title="Flask"><img src="assets/img/tech/flask.svg" alt="Flask"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Django"><img src="assets/img/tech/django.svg" alt="Django"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="JavaScript"><img src="assets/img/tech/javascript.svg"
+                alt="JavaScript" loading="lazy"></div>
+            <div class="tech-logo-chip" title="MySQL"><img src="assets/img/tech/mysql.svg" alt="MySQL"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Neo4j"><img src="assets/img/tech/neo4j.svg" alt="Neo4j"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Linux"><img src="assets/img/tech/linux.svg" alt="Linux"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Tailwind CSS"><img src="assets/img/tech/tailwindcss.svg"
+                alt="Tailwind CSS" loading="lazy"></div>
+            <div class="tech-logo-chip" title="Supabase"><img src="assets/img/tech/supabase.svg" alt="Supabase"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Celery"><img src="assets/img/tech/celery.svg" alt="Celery"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Selenium"><img src="assets/img/tech/selenium.svg" alt="Selenium"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Vercel"><img src="assets/img/tech/vercel.svg" alt="Vercel"
+                loading="lazy"></div>
+            <!-- duplicate set for seamless loop -->
+            <div class="tech-logo-chip" title="Flask"><img src="assets/img/tech/flask.svg" alt="Flask"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Django"><img src="assets/img/tech/django.svg" alt="Django"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="JavaScript"><img src="assets/img/tech/javascript.svg"
+                alt="JavaScript" loading="lazy"></div>
+            <div class="tech-logo-chip" title="MySQL"><img src="assets/img/tech/mysql.svg" alt="MySQL"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Neo4j"><img src="assets/img/tech/neo4j.svg" alt="Neo4j"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Linux"><img src="assets/img/tech/linux.svg" alt="Linux"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Tailwind CSS"><img src="assets/img/tech/tailwindcss.svg"
+                alt="Tailwind CSS" loading="lazy"></div>
+            <div class="tech-logo-chip" title="Supabase"><img src="assets/img/tech/supabase.svg" alt="Supabase"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Celery"><img src="assets/img/tech/celery.svg" alt="Celery"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Selenium"><img src="assets/img/tech/selenium.svg" alt="Selenium"
+                loading="lazy"></div>
+            <div class="tech-logo-chip" title="Vercel"><img src="assets/img/tech/vercel.svg" alt="Vercel"
+                loading="lazy"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Tech Stack Marquee Section -->
+
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde
-          omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <p>Core technical skills spanning Generative AI, agentic systems, backend engineering, and intelligent
+          automation.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4 skills-animation">
+        <div class="row g-4">
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box">
-              <h3>Python</h3>
-              <p>Specializing in core Python, asynchronous programming, and AI integration layers.</p>
-              <span class="text-end d-block">95%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
+              <h3>Python & Backend Engineering</h3>
+              <p>FastAPI, Flask, Django, REST APIs, JWT & RBAC, asynchronous processing (Celery), clean architecture.
+              </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
-              <h3>LangChain & LLM Integration</h3>
-              <p>Expertise in building complex RAG pipelines and multi-agent systems using LangChain.</p>
-              <span class="text-end d-block">90%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
+              <h3>LangChain & LangGraph</h3>
+              <p>RAG pipelines, embeddings, vector search, multi-agent orchestration, and MCP-based tool calling.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="skill-box">
               <h3>Intelligent Automation Frameworks</h3>
-              <p>Advanced automation using Robot Framework, Appium, and custom Python layers.</p>
-              <span class="text-end d-block">92%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
+              <p>Robot Framework, Playwright, Appium, Selenium, cross-VM automation via SSH & RDP.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="skill-box">
-              <h3>Backend System Architecture</h3>
-              <p>Designing scalable, modular, and enterprise-grade backend systems for AI applications.</p>
-              <span class="text-end d-block">90%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
+              <h3>Databases & DevOps</h3>
+              <p>Neo4j, PostgreSQL, MySQL, Redis, Docker, Git, Linux, CI/CD fundamentals.</p>
             </div>
           </div>
 
@@ -349,7 +448,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>What colleagues and collaborators say about working with me.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">

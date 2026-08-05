@@ -57,6 +57,32 @@
   });
 
   /**
+   * Theme toggle (dark/light), persisted in localStorage
+   */
+  const themeToggleBtn = document.querySelector('#theme-toggle');
+  const rootEl = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'light') {
+      rootEl.setAttribute('data-theme', 'light');
+      if (themeToggleBtn) themeToggleBtn.innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
+    } else {
+      rootEl.removeAttribute('data-theme');
+      if (themeToggleBtn) themeToggleBtn.innerHTML = '<i class="bi bi-sun-fill"></i>';
+    }
+  }
+
+  applyTheme(localStorage.getItem('theme') || 'dark');
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const nextTheme = rootEl.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', nextTheme);
+      applyTheme(nextTheme);
+    });
+  }
+
+  /**
    * Preloader
    */
   const preloader = document.querySelector('#preloader');
