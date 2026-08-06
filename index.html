@@ -47,12 +47,13 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#hero" class="active" aria-current="page">Home</a></li>
+          <li><a href="#about-snapshot">About</a></li>
+          <li><a href="#experience-snapshot">Experience</a></li>
+          <li><a href="#featured-projects">Projects</a></li>
+          <li><a href="resume.html">Resume <i class="bi bi-box-arrow-up-right nav-external-icon"></i></a></li>
+          <li><a href="services.html">Services <i class="bi bi-box-arrow-up-right nav-external-icon"></i></a></li>
+          <li><a href="contact.html">Contact <i class="bi bi-box-arrow-up-right nav-external-icon"></i></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -125,6 +126,11 @@
         </div>
 
       </div>
+
+      <a href="#about-snapshot" class="hero-scroll-cue" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <i class="bi bi-chevron-down"></i>
+      </a>
 
     </section><!-- /Hero Section -->
 
@@ -239,6 +245,151 @@
 
     </section><!-- /Tech Stack Marquee Section -->
 
+    <!-- About Snapshot Section -->
+    <section id="about-snapshot" class="about-snapshot section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <p class="lead">
+              I'm an AI Engineer and Python Backend Developer with 10+ years of overall professional experience,
+              including 3+ years building production-ready AI and automation systems, backed by an M.Sc. in
+              Artificial Intelligence.
+            </p>
+            <p>
+              I build LLM-powered applications using FastAPI, LangChain, LangGraph, and RAG architectures, with
+              hands-on experience across AI Agents, Vector Databases, and Model Context Protocol (MCP). At ThinkPalm
+              Technologies, I combine deep backend engineering with the ability to drive AI adoption across
+              engineering teams.
+            </p>
+            <a href="about.html" class="snapshot-link">More About Me <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          <div class="col-lg-5">
+            <div class="snapshot-highlights">
+              <div class="snapshot-highlight" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-cpu"></i>
+                <div>
+                  <h4>Generative AI & LLM Systems</h4>
+                  <p>RAG pipelines, embeddings, vector search, and LLM integration.</p>
+                </div>
+              </div>
+              <div class="snapshot-highlight" data-aos="fade-up" data-aos-delay="220">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h4>Agentic AI</h4>
+                  <p>Multi-step reasoning, tool calling, and MCP-based orchestration.</p>
+                </div>
+              </div>
+              <div class="snapshot-highlight" data-aos="fade-up" data-aos-delay="290">
+                <i class="bi bi-people"></i>
+                <div>
+                  <h4>Engineering Enablement</h4>
+                  <p>Mentored 200+ engineers through 50+ technical sessions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Snapshot Section -->
+
+    <!-- Experience Snapshot Section -->
+    <section id="experience-snapshot" class="experience-snapshot section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experience</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="role-card">
+          <div class="role-meta">
+            <span class="role-badge">Current Role</span>
+            <span class="role-dates">October 2022 – Present</span>
+          </div>
+          <h3>Associate Specialist, Academy & Research</h3>
+          <p class="role-company">ThinkPalm Technologies Pvt. Ltd., Trivandrum, India</p>
+          <ul>
+            <li>Design and implement LLM-powered solutions and automation frameworks using FastAPI, LangChain, and
+              RAG architectures.</li>
+            <li>Architected an Enterprise Knowledge Graph AI Platform (Neo4j, Celery, Redis, Docker) centralizing
+              fragmented engineering knowledge into a searchable graph.</li>
+            <li>Architected a cross-VM automation framework, increasing automation coverage by 30%+.</li>
+            <li>Mentor and train 200+ engineers, delivering 50+ technical sessions on Generative AI, Python, and
+              automation.</li>
+          </ul>
+        </div>
+        <div class="text-center mt-4">
+          <a href="resume.html" class="snapshot-link">View Full Resume <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+    </section><!-- /Experience Snapshot Section -->
+
+    <!-- Featured Projects Section -->
+    <section id="featured-projects" class="featured-projects section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <p>A few production-grade AI systems from my portfolio.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-teaser">
+              <div class="project-teaser-icon"><i class="bi bi-person-workspace"></i></div>
+              <h4>TalentHunt</h4>
+              <p>AI-powered ATS that reduced manual resume-screening effort by roughly 60-70% through LLM-driven
+                contextual matching and RAG-based Resume-JD scoring.</p>
+              <div class="project-teaser-stack">
+                <span>FastAPI</span>
+                <span>LangChain</span>
+                <span>RAG</span>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="220">
+            <div class="project-teaser">
+              <div class="project-teaser-icon"><i class="bi bi-diagram-3"></i></div>
+              <h4>Enterprise Knowledge Graph AI Platform</h4>
+              <p>Centralized fragmented engineering knowledge from Git, Jira, and docs into a searchable Neo4j graph
+                with AI-assisted repository analysis.</p>
+              <div class="project-teaser-stack">
+                <span>Flask</span>
+                <span>Neo4j</span>
+                <span>Celery</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="290">
+            <div class="project-teaser">
+              <div class="project-teaser-icon"><i class="bi bi-mortarboard"></i></div>
+              <h4>Sruthi Music Academy Management System</h4>
+              <p>Full-stack learning management platform with role-protected dashboards and an AI-powered RAG
+                chatbot for contextual student assistance.</p>
+              <div class="project-teaser-stack">
+                <span>React</span>
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+                <span>RAG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+        </div>
+      </div>
+
+    </section><!-- /Featured Projects Section -->
+
     <!-- Stats Section -->
     <section id="stats" class="stats section dark-background">
 
@@ -272,6 +423,21 @@
       </div>
 
     </section><!-- /Stats Section -->
+
+    <!-- Contact CTA Section -->
+    <section id="contact-cta" class="contact-cta section">
+
+      <div class="container" data-aos="fade-up">
+        <h2>Let's Build Intelligent Systems Together</h2>
+        <p class="lead">Open to AI engineering roles, enterprise automation architecture, and technical
+          consulting.</p>
+        <div class="contact-cta-actions">
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+          <a href="assets/files/Vijith_VT_Resume.pdf" class="btn btn-outline">Download Resume</a>
+        </div>
+      </div>
+
+    </section><!-- /Contact CTA Section -->
 
   </main>
 
