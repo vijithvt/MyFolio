@@ -5,11 +5,15 @@
   <script>(function () { try { if (localStorage.getItem('theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); } } catch (e) {} })();</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio | Vijith V T – Generative AI & Intelligent Automation Projects</title>
+  <title>Projects | Vijith V T – Applied AI Engineer</title>
   <meta name="description"
-    content="Explore AI engineering projects by Vijith V T including Generative AI systems, Agentic architectures, intelligent automation frameworks, and scalable backend solutions.">
+    content="Applied AI and Python backend projects by Vijith V T, including RAG/LLM applications, retrieval systems, automation frameworks, and prototype-level agentic AI experiments.">
   <meta name="keywords"
-    content="Generative AI Projects, Agentic AI Systems, Intelligent Automation Frameworks, Backend Engineering Portfolio">
+    content="Applied AI Projects, RAG Projects, LLM Applications, Python Backend Portfolio, FastAPI Projects">
+  <meta property="og:title" content="Projects | Vijith V T – Applied AI Engineer">
+  <meta property="og:description"
+    content="Applied AI and Python backend projects by Vijith V T, including RAG/LLM applications, retrieval systems, automation frameworks, and prototype-level agentic AI experiments.">
+  <meta property="og:type" content="website">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -50,8 +54,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html" class="active" aria-current="page">Projects</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active" aria-current="page">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -76,9 +80,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>AI Engineering Projects</h2>
-        <p>A curated selection of production-grade AI systems, intelligent automation frameworks, and scalable backend
-          architectures built from concept to enterprise deployment.</p>
+        <h2>Applied AI & Backend Projects</h2>
+        <p>Ordered from flagship to prototype/experimental. Filter to explore other projects.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -86,7 +89,8 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-ai">AI Platforms</li>
+            <li data-filter=".filter-ai">Applied AI</li>
+            <li data-filter=".filter-prototype">Prototype</li>
             <li data-filter=".filter-automation">Automation</li>
             <li data-filter=".filter-management">Management Systems</li>
             <li data-filter=".filter-education">Education</li>
@@ -106,22 +110,23 @@
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h4>TalentHunt – AI-Powered Intelligent Recruitment Platform</h4>
-                  <p>AI Recruitment Platform</p>
-                  <p class="mt-2 small text-muted">An AI-powered ATS that transforms keyword-based recruitment into
-                    contextual, LLM-driven evaluation. Modular FastAPI backend with a Resume-JD Matching Engine using
-                    LLM + RAG pipelines, embeddings, and vector retrieval — reducing manual resume-screening effort
-                    by roughly 60-70%.</p>
+                  <span class="badge-tag badge-tag--flagship">Flagship Project</span>
+                  <h4>TalentHunt – AI-Assisted Recruitment & Resume Matching Platform</h4>
+                  <p>Applied AI Recruitment Platform</p>
+                  <p class="mt-2 small text-muted">AI-assisted recruitment platform combining Python/FastAPI backend
+                    services with resume processing, embedding-based semantic retrieval, lexical/fuzzy matching, and
+                    LLM-assisted candidate evaluation to support recruiter review.</p>
                   <div class="portfolio-tags">
                     <span>Python</span>
                     <span>FastAPI</span>
                     <span>MySQL</span>
-                    <span>JWT</span>
-                    <span>LangChain</span>
-                    <span>LLMs</span>
-                    <span>RAG</span>
-                    <span>Embeddings</span>
-                    <span>Vector DB</span>
+                    <span>JWT / RBAC</span>
+                    <span>PyMuPDF</span>
+                    <span>Sentence Transformers</span>
+                    <span>ChromaDB</span>
+                    <span>RapidFuzz</span>
+                    <span>Groq LLM API</span>
+                    <span>Docker</span>
                     <span>React</span>
                   </div>
                 </div>
@@ -134,13 +139,11 @@
                   <i class="bi bi-diagram-3"></i>
                 </div>
                 <div class="portfolio-info">
-                  <h4>Enterprise Knowledge Graph AI Platform</h4>
-                  <p>AI-Assisted Engineering Intelligence Platform</p>
-                  <p class="mt-2 small text-muted">Architected a backend platform centralizing fragmented
-                    engineering knowledge from Git, Jira, commits, and documentation into a searchable Neo4j graph.
-                    Built asynchronous processing pipelines with Celery and Redis, and implemented AI-assisted
-                    repository analysis workflows — reducing manual effort to trace code ownership and
-                    dependencies.</p>
+                  <h4>Engineering Knowledge Graph — AI/Backend Prototype</h4>
+                  <p>Backend Prototype</p>
+                  <p class="mt-2 small text-muted">Backend prototype exploring how fragmented engineering
+                    information — repositories, Git activity, Jira items, commits, and documentation — could be
+                    represented in a searchable Neo4j graph, with asynchronous processing via Celery and Redis.</p>
                   <div class="portfolio-tags">
                     <span>Python</span>
                     <span>Flask</span>
@@ -148,6 +151,48 @@
                     <span>Celery</span>
                     <span>Redis</span>
                     <span>Docker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-prototype">
+              <div class="portfolio-card">
+                <div class="portfolio-img portfolio-img-placeholder">
+                  <i class="bi bi-gear-wide-connected"></i>
+                </div>
+                <div class="portfolio-info">
+                  <span class="badge-tag badge-tag--prototype">Prototype / Experimental</span>
+                  <h4>Agentic AI & MCP Prototypes</h4>
+                  <p>Agent Workflow Experiments</p>
+                  <p class="mt-2 small text-muted">Prototype experiments exploring controlled AI-agent workflows
+                    using LangGraph, tool calling, multi-step execution, and Model Context Protocol (MCP)
+                    integration patterns.</p>
+                  <div class="portfolio-tags">
+                    <span>Python</span>
+                    <span>LangGraph</span>
+                    <span>AI Agents</span>
+                    <span>Tool Calling</span>
+                    <span>MCP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <div class="portfolio-card">
+                <div class="portfolio-img portfolio-img-placeholder">
+                  <i class="bi bi-newspaper"></i>
+                </div>
+                <div class="portfolio-info">
+                  <h4>TechPulse — AI Content Automation</h4>
+                  <p>Personal AI/Automation Project</p>
+                  <p class="mt-2 small text-muted">Personal project exploring technology-news aggregation,
+                    LLM-assisted summarization, content categorization, and content-generation workflows.</p>
+                  <div class="portfolio-tags">
+                    <span>Python</span>
+                    <span>LLM APIs</span>
+                    <span>Automation</span>
                   </div>
                 </div>
               </div>
@@ -161,14 +206,13 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/swipe-assistant.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
                   <h4>Smart Swipe Assistant</h4>
                   <p>Desktop Automation Assistant</p>
-                  <p class="mt-2 small text-muted">An intelligent attendance and productivity assistant that automates
-                    swipe tracking, work-hour calculation, notifications, and timesheet updates using desktop automation
+                  <p class="mt-2 small text-muted">An attendance and productivity assistant that automates swipe
+                    tracking, work-hour calculation, notifications, and timesheet updates using desktop automation
                     workflows.</p>
                   <div class="portfolio-tags">
                     <span>Python</span>
@@ -192,14 +236,14 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/ai-content-platform.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
                   <h4>AI Content Generation Platform</h4>
-                  <p>Multi-Agent Content System</p>
-                  <p class="mt-2 small text-muted">A multi-agent AI platform for generating blogs, LinkedIn posts,
-                    technical articles, AI images, and structured social media content with export-ready workflows.</p>
+                  <p>Personal AI Content Project</p>
+                  <p class="mt-2 small text-muted">A personal project for generating blogs, LinkedIn posts,
+                    technical articles, and structured social media content using LLM APIs with export-ready
+                    workflows.</p>
                   <div class="portfolio-tags">
                     <span>Next.js</span>
                     <span>FastAPI</span>
@@ -221,15 +265,14 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/music-academy.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
                   <h4>Sruthi Music Academy Management System</h4>
-                  <p>Full-Stack Learning Management Platform</p>
-                  <p class="mt-2 small text-muted">A full-stack Student Management System with role-protected
-                    dashboards for Students, Admins, and Institutions — progress tracking, attendance, fee
-                    management, curriculum control, and an AI-powered RAG chatbot for contextual assistance.</p>
+                  <p>Founder / Product Initiative</p>
+                  <p class="mt-2 small text-muted">A founder-led Carnatic music education initiative with a student
+                    management system — role-protected dashboards, attendance and fee tracking, curriculum control,
+                    and a RAG-based chatbot for contextual student assistance.</p>
                   <div class="portfolio-tags">
                     <span>React</span>
                     <span>TypeScript</span>
@@ -237,9 +280,6 @@
                     <span>PostgreSQL</span>
                     <span>RLS</span>
                     <span>Edge Functions</span>
-                    <span>Tailwind CSS</span>
-                    <span>TanStack Query</span>
-                    <span>Capacitor</span>
                     <span>RAG</span>
                   </div>
                 </div>
@@ -253,7 +293,6 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/braille-system.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
@@ -278,7 +317,6 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/grievance-system.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
@@ -306,7 +344,6 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/advocate-office.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
@@ -334,10 +371,10 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/pranavam-library.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">
+                  <span class="badge-tag badge-tag--frontend">Frontend / UI Exploration</span>
                   <h4>DigiLib – Modern Digital Library Management System</h4>
                   <p>Digital Library Management System</p>
                   <p class="mt-2 small text-muted">A web-based Digital Library Management System enabling users to
@@ -362,7 +399,6 @@
                   <div class="portfolio-overlay">
                     <a href="assets/img/projects/lms-portal.png" class="glightbox portfolio-lightbox"><i
                         class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
                 <div class="portfolio-info">

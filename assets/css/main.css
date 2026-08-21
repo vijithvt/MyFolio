@@ -3294,3 +3294,131 @@ section,
   justify-content: center;
   margin-top: 1.5rem;
 }
+
+/*--------------------------------------------------------------
+# Project Status Badges (Flagship / Prototype / Frontend tags)
+--------------------------------------------------------------*/
+.badge-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 11px;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.badge-tag--flagship {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+}
+
+.badge-tag--prototype {
+  background-color: color-mix(in srgb, var(--default-color), transparent 88%);
+  color: var(--default-color);
+  opacity: 0.85;
+}
+
+.badge-tag--frontend {
+  background-color: color-mix(in srgb, var(--default-color), transparent 92%);
+  color: var(--default-color);
+  opacity: 0.7;
+}
+
+/*--------------------------------------------------------------
+# Skill Tier Groups (About / Resume skills)
+--------------------------------------------------------------*/
+.skill-tier {
+  margin-bottom: 2rem;
+}
+
+.skill-tier .skill-tier-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-color);
+  margin-bottom: 0.9rem;
+}
+
+.skill-tier .skill-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tier .skill-chip-row span {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background-color: color-mix(in srgb, var(--default-color), transparent 92%);
+  color: var(--default-color);
+}
+
+.skill-tier--primary .skill-chip-row span {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 7px 16px;
+}
+
+.skill-tier--supporting .skill-chip-row span {
+  opacity: 0.9;
+}
+
+.skill-tier--prototype .skill-chip-row span,
+.skill-tier--lowemphasis .skill-chip-row span {
+  opacity: 0.65;
+  font-size: 0.8rem;
+}
+
+/*--------------------------------------------------------------
+# Workflow Diagram (TalentHunt case study "How it works")
+--------------------------------------------------------------*/
+.workflow-diagram {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.workflow-diagram .workflow-step {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--heading-color);
+  text-align: center;
+  flex: 1 1 150px;
+}
+
+.workflow-diagram .workflow-arrow {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  flex: 0 0 auto;
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .workflow-diagram {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .workflow-diagram .workflow-arrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Approach Statements (About page — replaces testimonials)
+--------------------------------------------------------------*/
+.about .approach-note {
+  max-width: 780px;
+}
